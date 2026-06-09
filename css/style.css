@@ -375,6 +375,62 @@ form {
   text-align: center;
 }
 
+/* layout login */
+.login-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 2em;
+}
+
+.login-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  height: 25rem;
+  width: 100%;
+  max-width: 40rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* título */
+.login-titulo {
+  margin-bottom: 2rem;
+}
+
+/* inputs */
+.login-input {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* botão */
+.login-botao {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #4caf50;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.login-botao:hover {
+  background: #43a047;
+}
+
+/* mensagem */
+.login-mensagem {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
 .footer {
   text-align: center;
   padding: 20px;
