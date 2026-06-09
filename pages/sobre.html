@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Home</title>
+    <link
+      rel="shortcut icon"
+      href="../imagens/icones/mundo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <nav class="container-menu">
+        <input type="checkbox" id="menu" class="container__botao-menu" />
+        <label for="menu" class="container__rotulo">
+          <span class="cabecalho__menu-hamburguer container__imagem"></span>
+        </label>
+        <ul class="lista-menu">
+          <li class="lista-menu__titulo">Páginas</li>
+          <li class="lista-menu__item">
+            <a href="../index.html" class="lista-menu__link">Página inicial</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="./pages/integrante.html" class="lista-menu__link"
+              >Integrantes</a
+            >
+          </li>
+          <li class="lista-menu__item">
+            <a href="sobre.html" class="lista-menu__link">sobre</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="faq.html" class="lista-menu__link">FAQ</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="contato.html" class="lista-menu__link">Contato</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="solucao.html" class="lista-menu__link">solução</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="plataforma.html" class="lista-menu__link">plataforma</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="cabecalho__logo-container">
+        <img
+          src="../imagens/logos/logo-mundo.png"
+          alt="Logo da Apeperia"
+          class="cabecalho__logo"
+        />
+        <h1 class="titulo">Clear Horizon</h1>
+      </div>
+      <div class="container-menu">
+        <a href="./pages/login.html" class="container-menu__link">
+          <img
+            src="../imagens/icones/Usuario.svg"
+            alt="Meu perfil"
+            class="container__imagem"
+          />
+        </a>
+      </div>
+    </header>
+    <main>
+      <section class="sobre">
+        <h2 class="sobre__titulo">Sobre</h2>
+        <p class="sobre__texto">
+          O projeto Clear Horizon tem como foco principal reduzir a poluição
+          espacial por meio de soluções inovadoras e sustentáveis. A proposta
+          central envolve a reciclagem de satélites antigos e desativados, que
+          já atingiram o fim de sua vida útil, além da renovação e otimização
+          das rotas de foguetes.
+        </p>
+        <p class="sobre__texto">
+          Atualmente, uma grande quantidade de equipamentos permanece em órbita
+          sem função, contribuindo para o aumento do lixo espacial e elevando os
+          riscos de colisões. Pensando nisso, o projeto busca reaproveitar esses
+          materiais sempre que possível, reduzindo o impacto ambiental fora da
+          Terra.
+        </p>
+        <p class="sobre__texto">
+          O Clear Horizon possui dois objetivos principais: aumentar a segurança
+          de missões espaciais, especialmente aquelas com tripulação, e diminuir
+          significativamente a quantidade de detritos em órbita. Dessa forma, o
+          projeto contribui para um futuro mais seguro e sustentável na
+          exploração espacial.
+        </p>
+      </section>
+      <div class="cards-container-sobre">
+        <section class="card">
+          <h2 class="descricao__titulo">Órbita Geoestacionária</h2>
+          <p class="descricao__texto">
+            A órbita geoestacionária é uma órbita circular situada a uma
+            altitude específica sobre o equador terrestre, onde um satélite
+            permanece fixo em relação a um ponto na superfície da Terra. Esta
+            órbita permite manter uma posição constante no céu, o que é
+            particularmente útil para satélites de comunicação e meteorologia.
+          </p>
+          <p class="descricao__texto">
+            Para que um satélite permaneça sempre sobre um determinado ponto da
+            superfície da Terra sem a necessidade de propulsão vertical e
+            horizontal, ele deve orbitar sempre a uma distancia fixa de 35 786
+            km acima do nível do mar, no plano do equador da Terra. Isso
+            independente da massa do satélite. Os satélites brasileiros de
+            comunicação da família Brasilsat são satélites de órbita
+            geoestacionária.
+          </p>
+          <img
+            class="card__img"
+            src="../imagens/img/orbita-geoestacionaria.webp"
+            alt="Ilustração da órbita geoestacionária"
+            class="descricao__imagem"
+          />
+        </section>
+        <section class="card">
+          <h2 class="descricao__titulo">Órbita média da terra</h2>
+          <p class="descricao__texto">
+            é a região do espaço ao redor da Terra acima da altitude da órbita
+            baixa (2 000 km) e abaixo da altitude da órbita geoestacionária (35
+            786 km).
+          </p>
+          <p class="descricao__texto">
+            Os usos mais comuns de satélites, são nas áreas de navegação,
+            comunicação e ciências geodésicas. A altitude mais comum nessas
+            atividades é de 20 200 km, com um período orbital de 12 horas, como
+            usado por exemplo, pelos satélites do sistema de posicionamento
+            global (GPS).
+          </p>
+          <img
+            class="card__img"
+            src="../imagens/img/orbita-media-terra-satelite.jpeg"
+            alt="Ilustração da órbita média da terra"
+            class="descricao__imagem"
+          />
+        </section>
+
+        <section class="card">
+          <h2 class="descricao__titulo">Órbita média da terra</h2>
+          <p class="descricao__texto">
+            Em termos muito simples, a órbita terrestre baixa (LEO) é exatamente
+            o que parece: Uma órbita ao redor da Terra com uma altitude que se
+            situa na extremidade inferior do intervalo de órbitas possíveis.
+            Isso é cerca de 2.000 quilômetros (1.200 milhas) ou menos. A maioria
+            dos satélites encontra-se em LEO, assim como a Estação Espacial
+            Internacional (ISS).
+          </p>
+          <p class="descricao__texto">
+            Os usos mais comuns de satélites, são nas áreas de navegação,
+            comunicação e ciências geodésicas. A altitude mais comum nessas
+            atividades é de 20 200 km, com um período orbital de 12 horas, como
+            usado por exemplo, pelos satélites do sistema de posicionamento
+            global (GPS).
+          </p>
+          <img
+            class="card__img"
+            src="../imagens/img/orbita-baixa.webp"
+            alt="Ilustração da órbita baixa"
+            class="descricao__imagem"
+          />
+        </section>
+      </div>
+      <section class="card">
+        <h2 class="descricao__titulo">Aumento no número de satélites</h2>
+        <p class="descricao__texto">
+          Até 2019 tinham menos de 500 satélites na órbita da Terra. Desde
+          então, esse número vem saltando de forma exponencial e ainda não
+          parece estarmos próximos de algum limite.
+        </p>
+        <p class="descricao__texto">
+          Ainda de acordo com a UNOOSA, no final de 2022 14 mil satélites na
+          lista de lançamentos, com previsão de outros 100 mil a ocupar novos
+          espaços durante a próxima década.
+        </p>
+        <p class="descricao__texto">
+          Isso reflete o quão dependentes de satélites nós somos. Hoje eles são
+          responsáveis por internet, comunicação, monitoramento climático e mais
+          uma infinidade de funções. Dessa forma, saber lidar com o lixo
+          espacial fica cada vez mais importante.
+        </p>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>© 2026 Clear Horizon</p>
+    </footer>
+  </body>
+</html>

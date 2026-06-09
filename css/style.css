@@ -18,13 +18,7 @@
   --cor-azul: #0376fa;
   --cor-branca: #fff;
 
-  --azul-claro: #dfe3e5;
-  --cinza-escuro: #4f4c4c;
-  --vermelho-forte: #b72e2e;
-
   --degrade-azul: linear-gradient(135deg, #0376fa 0%, #ffffff 100%);
-  --neon-cyan-soft: rgba(0, 240, 255, 0.6);
-  --neon-cyan-strong: rgba(0, 240, 255, 1);
 
   --fonte-montserrat: "Montserrat", sans-serif;
   --fonte-poppins: "Poppins", sans-serif;
@@ -51,7 +45,6 @@ body {
   padding: 0 1rem;
 }
 
-
 .container-menu {
   display: flex;
   align-items: center;
@@ -61,14 +54,11 @@ body {
   display: block;
 }
 
-
-
 .container__botao-menu:checked
   ~ .container__rotulo
   > .cabecalho__menu-hamburguer {
   background-image: url("../imagens/icones/Menu Aberto.svg");
 }
-
 
 .cabecalho__menu-hamburguer {
   width: 24px;
@@ -122,7 +112,6 @@ body {
   align-items: center;
 }
 
-
 .cabecalho__logo {
   margin: 1rem 1rem;
   height: 4rem;
@@ -171,6 +160,11 @@ body {
 }
 
 .cards-container-index {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+.cards-container-sobre {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
@@ -238,6 +232,36 @@ body {
 .diferenciais__item--recilcar {
   background-image: url(../imagens/icones/reciclar.png);
 }
+/*sobre*/
+.sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: var(--cor-preta);
+  text-align: center;
+
+  background-color: var(--cor-branca);
+}
+
+.sobre__titulo {
+  color: var(--cor-preta);
+  font-family: var(--fonte-montserrat);
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sobre__texto {
+  color: var(--cor-preta);
+  font-size: 1.25rem;
+  line-height: normal;
+  margin: 2rem 2rem;
+}
+
+.card__img {
+  display: none;
+}
 
 .footer {
   text-align: center;
@@ -288,6 +312,9 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
   }
+  .cards-container-sobre {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -320,5 +347,7 @@ body {
   .diferenciais__lista {
     justify-content: space-around;
   }
-
+  .cards-container-sobre {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
