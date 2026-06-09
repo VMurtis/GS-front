@@ -1,11 +1,168 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>FAQ</title>
+    <link
+      rel="shortcut icon"
+      href="../imagens/icones/mundo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <nav class="container-menu">
+        <input type="checkbox" id="menu" class="container__botao-menu" />
+        <label for="menu" class="container__rotulo">
+          <span class="cabecalho__menu-hamburguer container__imagem"></span>
+        </label>
+        <ul class="lista-menu">
+          <li class="lista-menu__titulo">Páginas</li>
+          <li class="lista-menu__item">
+            <a href="../index.html" class="lista-menu__link">Página inicial</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="./pages/integrante.html" class="lista-menu__link"
+              >Integrantes</a
+            >
+          </li>
+          <li class="lista-menu__item">
+            <a href="sobre.html" class="lista-menu__link">sobre</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="contato.html" class="lista-menu__link">Contato</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="solucao.html" class="lista-menu__link">solução</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="plataforma.html" class="lista-menu__link">plataforma</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="cabecalho__logo-container">
+        <img
+          src="../imagens/logos/logo-mundo.png"
+          alt="Logo da Apeperia"
+          class="cabecalho__logo"
+        />
+        <h1 class="titulo">Clear Horizon</h1>
+      </div>
+      <div class="container-menu">
+        <a href="./pages/login.html" class="container-menu__link">
+          <img
+            src="../imagens/icones/Usuario.svg"
+            alt="Meu perfil"
+            class="container__imagem"
+          />
+        </a>
+      </div>
+    </header>
+    <main class="cor-degrade-fundo">
+      <section class="sobre">
+        <h2 class="sobre__titulo">Preguntas</h2>
+        <p class="sobre__texto">
+          Esta página de perguntas frequentes (FAQ) tem como objetivo fornecer
+          respostas claras e concisas para as dúvidas mais comuns relacionadas
+          ao projeto Clear Horizon. Aqui, você encontrará informações sobre o
+          que é o projeto, seus objetivos, como ele funciona e muito mais. Se
+          você tiver alguma pergunta que não esteja listada aqui, sinta-se à
+          vontade para entrar em contato conosco para obter mais informações.
+        </p>
+      </section>
+      <div class="cards-container-faq">
+        <section class="card">
+          <h2 class="descricao__titulo-faq">o que é lixo espacial?</h2>
+          <p class="descricao__texto-faq">
+            Lixo espacial é qualquer objeto feito pelo homem que foi lançado ao
+            espaço e perdeu sua utilidade, permanecendo em órbita da Terra.
+          </p>
+        </section>
+        <section class="card">
+          <h2 class="descricao__titulo-faq">
+            quanto de lixo espacial tem na orbita da terra?
+          </h2>
+          <p class="descricao__texto-faq">
+            O lixo espacial é um problema crescente em órbita da Terra, com mais
+            de 130 milhões de objetos não operacionais, representando riscos
+            significativos para satélites e missões espaciais.
+          </p>
+        </section>
+        <section class="card">
+          <h2 class="descricao__titulo-faq">
+            Se é possivel reciclar um satelite ou reparar?
+          </h2>
+          <p class="descricao__texto-faq">
+            Sim, é possível reciclar um satélite ou reparar. Aqui estão algumas
+            opções disponíveis.
+          </p>
+        </section>
+        <section class="card">
+          <h2 class="descricao__titulo-faq">
+            Como é feita a limpeza do lixo espacial?
+          </h2>
+          <p class="descricao__texto-faq">
+            A NASA está implementando uma estratégia de sustentabilidade
+            espacial que inclui a remoção de lixo orbital. A agência reconhece a
+            urgência do problema, com milhares de satélites ativos e milhões de
+            pedaços de detritos orbitando a Terra.
+          </p>
+        </section>
+        <section class="card">
+          <h2 class="descricao__titulo-faq">
+            Como é feita a limpeza do lixo espacial?
+          </h2>
+          <p class="descricao__texto-faq">
+            A NASA está implementando uma estratégia de sustentabilidade
+            espacial que inclui a remoção de lixo orbital. A agência reconhece a
+            urgência do problema, com milhares de satélites ativos e milhões de
+            pedaços de detritos orbitando a Terra.
+          </p>
+        </section>
+        <section class="card">
+          <h2 class="descricao__titulo-faq">
+            O que fazer depois de pegar um satelite?
+          </h2>
+          <p class="descricao__texto-faq">
+            A opção envolve transportar os detritos para um centro de reciclagem
+            orbital. Embora o transporte demande combustível, há economia
+            significativa ao reutilizar materiais como alumínio diretamente no
+            espaço.
+          </p>
+        </section>
+        <section class="card">
+          <h2 class="descricao__titulo-faq">
+            O satelite que vai coletar o lixo espacial uso que tipo de motor?
+          </h2>
+          <p class="descricao__texto-faq">
+            O satélite que coleta lixo espacial utiliza um motor iônico para
+            lançar detritos na atmosfera, onde eles se queimam de forma segura.
+            Este tipo de motor é projetado para operar com plasma, permitindo
+            uma ejeção bidirecional, o que significa que ele pode lançar
+            detritos em direções opostas, anulando-se e mantendo o satélite em
+            posição desejada
+          </p>
+        </section>
+        <section class="card">
+          <h2 class="descricao__titulo-faq">
+            Quantos tempo de vida útil tem um satélite?
+          </h2>
+          <p class="descricao__texto-faq">
+            Depende d o tipo de satélite e dos materiais utilizados na sua
+            construção. O CBERS – Satélite Sinobrasileiro de Recursos
+            Terrestres, desenvolvido por Brasil e China, tem uma vida útil
+            prevista de dois anos. Muitos satélites continuam a funcionar após o
+            término da vida útil prevista. É o caso dos SCDs 1 e 2, que foram
+            construídos para durar dois anos e estão em órbita, em operação, há
+            17 e 12 anos, respectivamente.
+          </p>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>© 2026 Clear Horizon</p>
+    </footer>
+  </body>
 </html>
