@@ -1,11 +1,152 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Solução</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <nav class="container-menu">
+        <input type="checkbox" id="menu" class="container__botao-menu" />
+        <label for="menu" class="container__rotulo">
+          <span class="cabecalho__menu-hamburguer container__imagem"></span>
+        </label>
+        <ul class="lista-menu">
+          <li class="lista-menu__titulo">Páginas</li>
+          <li class="lista-menu__item">
+            <a href="../index.html" class="lista-menu__link">Página inicial</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="./pages/integrante.html" class="lista-menu__link"
+              >Integrantes</a
+            >
+          </li>
+          <li class="lista-menu__item">
+            <a href="sobre.html" class="lista-menu__link">sobre</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="faq.html" class="lista-menu__link">FAQ</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="contato.html" class="lista-menu__link">Contato</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="solucao.html" class="lista-menu__link">solução</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="plataforma.html" class="lista-menu__link">plataforma</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="cabecalho__logo-container">
+        <img
+          src="../imagens/logos/logo-mundo.png"
+          alt="Logo da Apeperia"
+          class="cabecalho__logo"
+        />
+        <h1 class="titulo">Clear Horizon</h1>
+      </div>
+      <div class="container-menu">
+        <a href="./pages/login.html" class="container-menu__link">
+          <img
+            src="../imagens/icones/Usuario.svg"
+            alt="Meu perfil"
+            class="container__imagem"
+          />
+        </a>
+      </div>
+    </header>
+    <main>
+      <section class="conscientizacao">
+        <h2 class="conscientizacao__titulo">Por que isso importa?</h2>
+
+        <p class="conscientizacao__texto">
+          O espaço ao redor da Terra, que antes era visto como um ambiente vasto
+          e praticamente ilimitado, hoje enfrenta um problema crescente: o
+          acúmulo de detritos espaciais. Satélites desativados, fragmentos de
+          colisões e equipamentos abandonados orbitam o planeta em alta
+          velocidade, representando riscos reais para missões atuais e futuras.
+        </p>
+
+        <p class="conscientizacao__texto">
+          Cada região orbital possui uma função essencial para a nossa
+          sociedade, desde comunicações e navegação até monitoramento climático.
+          No entanto, sem um controle adequado, essas áreas estão se tornando
+          cada vez mais congestionadas e perigosas.
+        </p>
+
+        <p class="conscientizacao__texto">
+          Entender como essas órbitas funcionam é o primeiro passo para perceber
+          a importância de preservá-las. A seguir, conheça melhor cada uma delas
+          e entenda como o uso consciente do espaço pode garantir um futuro mais
+          seguro e sustentável.
+        </p>
+      </section>
+      <div class="solucao__layout">
+        <div class="solucao__cards">
+          <section class="card">
+            <h2 class="descricao__titulo">
+              Quantos tempo de vida útil tem um satélite?
+            </h2>
+            <p class="descricao__texto">
+              Depende d o tipo de satélite e dos materiais utilizados na sua
+              construção. O CBERS – Satélite Sinobrasileiro de Recursos
+              Terrestres, desenvolvido por Brasil e China, tem uma vida útil
+              prevista de dois anos. Muitos satélites continuam a funcionar após
+              o término da vida útil prevista. É o caso dos SCDs 1 e 2, que
+              foram construídos para durar dois anos e estão em órbita, em
+              operação, há 17 e 12 anos, respectivamente.
+            </p>
+          </section>
+          <section class="card">
+            <h2 class="descricao__titulo">Nossa Solução</h2>
+            <p>
+              O Clear Horizon propõe soluções inovadoras para combater a
+              poluição espacial, focando na reciclagem de satélites desativados
+              e na otimização das rotas de foguetes.
+            </p>
+          </section>
+
+          <section class="card">
+            <h2>O Problema</h2>
+            <p>
+              Milhares de satélites fora de operação permanecem em órbita,
+              aumentando o risco de colisões e colocando em perigo missões
+              espaciais, especialmente as tripuladas.
+            </p>
+          </section>
+
+          <section class="card">
+            <h2>Reciclagem de Satélites</h2>
+            <p>
+              Nossa proposta é reutilizar partes de satélites antigos, reduzindo
+              a quantidade de lixo espacial e aproveitando recursos já
+              existentes.
+            </p>
+          </section>
+
+          <section class="card">
+            <h2>Rotas Inteligentes</h2>
+            <p>
+              Criamos rotas mais seguras para foguetes, evitando áreas com
+              grande concentração de detritos espaciais.
+            </p>
+          </section>
+        </div>
+        <div class="lado-direito">
+          <img
+            class="imagem__astronauta"
+            src="../imagens/img/astronauta.jpg"
+            alt="Astronauta"
+          />
+        </div>
+      </div>
+    </main>
+    <hr />
+    <footer class="footer">
+      <p>© 2026 Clear Horizon </p>
+    </footer>
+  </body>
 </html>
