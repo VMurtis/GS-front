@@ -1,0 +1,324 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat,Poppins/Montserrat/Montserrat-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/Montserrat,Poppins/Poppins/Poppins-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --cor-preta: #000;
+  --cor-azul: #0376fa;
+  --cor-branca: #fff;
+
+  --azul-claro: #dfe3e5;
+  --cinza-escuro: #4f4c4c;
+  --vermelho-forte: #b72e2e;
+
+  --degrade-azul: linear-gradient(135deg, #0376fa 0%, #ffffff 100%);
+  --neon-cyan-soft: rgba(0, 240, 255, 0.6);
+  --neon-cyan-strong: rgba(0, 240, 255, 1);
+
+  --fonte-montserrat: "Montserrat", sans-serif;
+  --fonte-poppins: "Poppins", sans-serif;
+}
+
+/*Reset*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--cor-preta);
+  font-family: var(--fonte-poppins);
+}
+
+.cabecalho {
+  background-color: var(--cor-azul);
+  color: var(--cor-branca);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0 1rem;
+}
+
+
+.container-menu {
+  display: flex;
+  align-items: center;
+}
+
+.container__botao-menu:checked ~ .lista-menu {
+  display: block;
+}
+
+
+
+.container__botao-menu:checked
+  ~ .container__rotulo
+  > .cabecalho__menu-hamburguer {
+  background-image: url("../imagens/icones/Menu Aberto.svg");
+}
+
+
+.cabecalho__menu-hamburguer {
+  width: 24px;
+  height: 24px;
+  background-image: url("../imagens/icones/Menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+.lista-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 60vw;
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+  padding: 1em;
+  background-color: var(--cor-branca);
+  list-style-type: none;
+  border: 2px solid var(--cor-azul);
+}
+
+.lista-menu__titulo {
+  color: var(--cor-preta);
+  font-weight: 700;
+}
+
+.lista-menu__item:hover {
+  background-color: var(--cor-azul);
+  color: var(--cor-branca);
+}
+
+.lista-menu__link {
+  background: var(--cor-preta);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.container__botao-menu {
+  display: none;
+}
+
+.cabecalho__logo-container {
+  display: flex;
+  align-items: center;
+}
+
+
+.cabecalho__logo {
+  margin: 1rem 1rem;
+  height: 4rem;
+}
+
+.titulo {
+  font-family: var(--fonte-montserrat);
+  text-align: center;
+}
+
+.container-menu {
+  display: flex;
+  align-items: center;
+}
+
+/*chamada*/
+.chamada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: var(--cor-branca);
+  text-align: center;
+
+  /*background-image: url(../imagens/img/espaco-sideral.jpg);*/
+  background-image: url(../imagens/img/nasa-mobile.webp);
+  background-size: cover;
+  margin: 0;
+}
+
+.chamada__titulo {
+  color: var(--cor-branca);
+  font-family: var(--fonte-montserrat);
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 2.5rem auto;
+}
+
+.chamada__texto {
+  color: var(--cor-branca);
+  font-size: 1.25rem;
+  line-height: normal;
+
+  margin: 2rem 2rem;
+}
+
+.cards-container-index {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: var(--cor-branca);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin: 1em 1rem;
+  padding: 1em 1em;
+  text-align: center;
+}
+
+.descricao__titulo {
+  color: var(--cor-preta);
+  font-family: var(--fonte-montserrat);
+  font-weight: 700;
+  padding: 0.5em;
+}
+
+.descricao__texto {
+  color: var(--cor-preta);
+  font-size: 1.3rem;
+  font-family: var(--fonte-montserrat);
+}
+
+/*Diferenciais*/
+.diferenciais {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  background-color: var(--cor-branca);
+}
+
+.container {
+  padding-right: 6%;
+  padding-left: 6%;
+}
+
+.diferenciais__lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.diferenciais__item {
+  max-width: 350px;
+
+  box-sizing: border-box;
+
+  background-repeat: no-repeat;
+  background-position: top 1.25rem left 2.5rem;
+
+  padding: 2rem 0 2rem 7.5rem;
+}
+
+.diferenciais__item--mundo {
+  background-image: url(../imagens/icones/estacao-de-satelite.png);
+}
+
+.diferenciais__item--satelite {
+  background-image: url(../imagens/icones/satelite.png);
+}
+.diferenciais__item--recilcar {
+  background-image: url(../imagens/icones/reciclar.png);
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #06141b;
+  color: var(--cor-branca);
+}
+
+@media screen and (min-width: 768px) {
+  .chamada {
+    background-image: url(../imagens/img/nasa-tablet.png);
+    background-size: cover;
+  }
+  .cards-container {
+    flex-direction: row;
+    margin: 1.5em;
+  }
+  .card__img {
+    display: inline-block;
+    align-items: center;
+    width: 70%;
+    max-width: 800px;
+    height: auto;
+  }
+
+  .cards-container-index {
+    display: flex;
+    justify-content: space-around;
+  }
+  .chamada__titulo {
+    color: var(--cor-azul);
+    font-size: 3rem;
+  }
+  .chamada__texto {
+    font-size: 1.7rem;
+  }
+  .descricao__titulo {
+    font-weight: 700;
+    padding: 1rem 0.5em;
+    font-size: 1.6rem;
+  }
+
+  .descricao__texto {
+    font-size: 1.8rem;
+  }
+  .solucao__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cabecalho {
+    flex-direction: row;
+    justify-content: space-between;
+
+    border: none;
+  }
+
+  /*chamada*/
+  .chamada {
+    background-image: url(../imagens/img/nasa-desktop.webp);
+    background-size: cover;
+  }
+  .chamada__titulo {
+    color: var(--cor-branca);
+    font-size: 3rem;
+  }
+  .chamada__texto {
+    color: var(--cor-branca);
+    font-size: 1.7rem;
+  }
+
+  .chamada__titulo {
+    font-size: 3.25rem;
+    margin-botto: 2rem;
+  }
+
+  .diferenciais__lista {
+    justify-content: space-around;
+  }
+
+}
