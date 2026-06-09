@@ -431,6 +431,27 @@ form {
   font-size: 1.2rem;
 }
 
+/*plataforma*/
+.plataforma {
+  padding: 28.5rem 2rem;
+  text-align: center;
+}
+
+.plataforma__botao {
+  margin: 10px;
+  padding: 10px 15px;
+  border: none;
+  background: #1b263b;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.plataforma__resultado {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
 .footer {
   text-align: center;
   padding: 20px;
